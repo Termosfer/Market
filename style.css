@@ -25,31 +25,72 @@ body {
     width: 60%;
     background-image: url(./img/desktop-wallpaper-hardwood-floor-texture.jpg);
     height: 95vh;
+    display: flex;
+    justify-content: space-between;
 }
 .img-place{
     display: grid;
-    grid-template-columns: repeat(2, 150px);
-   gap: 10px;
-    justify-content: center;
-    align-items: center;
-    height: 100px;
+    grid-template-columns: repeat(2, 200px);
+    padding-bottom: 20px;
+    padding-left: 20px;
+    align-items:flex-end;
+    height: 100%;
+    width: 60%;
     
+}
+
+.kassa {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.amount-machine {
+  font-size: 30px;
+  padding: 10px 40px;
+  background-color: bisque;
+  border-radius: 5px;
+  border: 1px solid #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.customer {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: bisque;
+  text-align: center;
+  line-height: 50px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
 }
 .img{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 150px;
-    background-color: aqua;
+    width: 170px;
+    background-image: linear-gradient(red, green);
+    border: 2px solid #fff;
 }
 img{
-    width: 100px;
-    height: 100px;
-   
+    width: 120px;
+    height: 120px;
+    margin: 0 2px;
 }
 i{
-    width: 100px;
-    height: 100px;
+    font-size: 20px;
+    color: aliceblue;
+    cursor: pointer;
+    
+}
+.fa-circle-plus{
+  
+  height: 100%;
 }
 .right-side {
     width: 35%;
