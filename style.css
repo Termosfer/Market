@@ -84,7 +84,7 @@ img{
 }
 i{
     font-size: 20px;
-    color: aliceblue;
+    color: #fff;
     cursor: pointer;
     
 }
@@ -96,4 +96,21 @@ i{
     width: 35%;
     height: 95vh;
     background-image: url(./img/istockphoto-467248422-612x612.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.top-side {
+  width: 100%;
+  height: 50%;
+  background-color: red;
+}
+.bottom-side {
+  width: 100%;
+  height: 50%;
+  background-color: brown;
 }
