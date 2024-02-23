@@ -146,6 +146,8 @@ i{
   /* background-color: brown; */
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
   margin-top: 10px;
   gap: 10px;
 }
