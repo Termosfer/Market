@@ -113,6 +113,7 @@ i{
   flex-direction: column;
   border-bottom: 1px solid #fff;
   overflow: auto;
+  padding: 2.5%;
 }
 .top-div {
   display: flex;
