@@ -18,50 +18,50 @@
       <div class="left-side">
         <div class="img-place">
           <div class="img">
-            <i class="fa-solid fa-circle-minus"></i>
+            <i onclick="dec('Gilas',0)" class="fa-solid fa-circle-minus"></i>
             <img
               src="./img/30109737_fdc4a04b-e644-446a-9f79-21c437f3cb60.webp"
               alt=""
             />
-            <i class="fa-solid fa-circle-plus"></i>
+            <i onclick="inc('Gilas',0)" class="fa-solid fa-circle-plus"></i>
           </div>
           <div class="img">
-            <i class="fa-solid fa-circle-minus"></i>
+            <i onclick="dec('Badam',1)" class="fa-solid fa-circle-minus"></i>
             <img
               src="./img/30186333_e6b2372a-93ce-4c8a-b21c-9b719cd3ccee.webp"
               alt=""
             />
-            <i class="fa-solid fa-circle-plus"></i>
+            <i onclick="inc('Badam',1)" class="fa-solid fa-circle-plus"></i>
           </div>
           <div class="img">
-            <i class="fa-solid fa-circle-minus"></i>
+            <i onclick="dec('Moruq',2)" class="fa-solid fa-circle-minus"></i>
             <img src="./img/390426.jpg" alt="" />
-            <i class="fa-solid fa-circle-plus"></i>
+            <i onclick="inc('Moruq',2)" class="fa-solid fa-circle-plus"></i>
           </div>
           <div class="img">
-            <i class="fa-solid fa-circle-minus"></i>
+            <i onclick="dec('Armud',3)" class="fa-solid fa-circle-minus"></i>
             <img src="./img/933094_1626545747_ARMUD_(FOREL).jpg" alt="" />
-            <i class="fa-solid fa-circle-plus"></i>
+            <i onclick="inc('Armud',3)" class="fa-solid fa-circle-plus"></i>
           </div>
           <div class="img">
-            <i class="fa-solid fa-circle-minus"></i>
+            <i onclick="decc('Alma',4)" class="fa-solid fa-circle-minus"></i>
             <img src="./img/alma_041.jpg" alt="" />
-            <i class="fa-solid fa-circle-plus"></i>
+            <i onclick="inc('Alma',4)" class="fa-solid fa-circle-plus"></i>
           </div>
           <div class="img">
-            <i class="fa-solid fa-circle-minus"></i>
+            <i onclick="dec('Çiyələk',5)" class="fa-solid fa-circle-minus"></i>
             <img src="./img/big_Ciyelek_01.jpg" alt="" />
-            <i class="fa-solid fa-circle-plus"></i>
+            <i onclick="inc('Çiyələk',5)" class="fa-solid fa-circle-plus"></i>
           </div>
           <div class="img">
-            <i class="fa-solid fa-circle-minus"></i>
+            <i onclick="dec('Yemiş',6)" class="fa-solid fa-circle-minus"></i>
             <img src="./img/yemish.jpeg" alt="" />
-            <i class="fa-solid fa-circle-plus"></i>
+            <i onclick="inc('Yemiş',6)" class="fa-solid fa-circle-plus"></i>
           </div>
           <div class="img">
-            <i class="fa-solid fa-circle-minus"></i>
+            <i onclick="dec('Qarpız',7)" class="fa-solid fa-circle-minus"></i>
             <img src="./img/images.jpeg" alt="" />
-            <i class="fa-solid fa-circle-plus"></i>
+            <i onclick="inc('Qarpız',7)" class="fa-solid fa-circle-plus"></i>
           </div>
         </div>
         <div class="kassa">
@@ -74,60 +74,77 @@
           <div class="top-div">
             <input type="checkbox" />
             <div class="radio-btn">
-              <h3>Mehsul</h3>
-              <span>1kq</span>
+              <h3>Gilas</h3>
+              <span class="kq">0 kq</span>
             </div>
           </div>
           <div class="top-div">
             <input type="checkbox" />
             <div class="radio-btn">
-              <h3>Mehsul</h3>
-              <span>1kq</span>
+              <h3>Badam</h3>
+              <span class="kq">0 kq</span>
             </div>
           </div>
           <div class="top-div">
             <input type="checkbox" />
             <div class="radio-btn">
-              <h3>Mehsul</h3>
-              <span>1kq</span>
+              <h3>Moruq</h3>
+              <span class="kq">0 kq</span>
             </div>
           </div>
           <div class="top-div">
             <input type="checkbox" />
             <div class="radio-btn">
-              <h3>Mehsul</h3>
-              <span>1kq</span>
+              <h3>Armud</h3>
+              <span class="kq">0 kq</span>
             </div>
           </div>
           <div class="top-div">
             <input type="checkbox" />
             <div class="radio-btn">
-              <h3>Mehsul</h3>
-              <span>1kq</span>
+              <h3>Alma</h3>
+              <span class="kq">0 kq</span>
             </div>
           </div>
           <div class="top-div">
             <input type="checkbox" />
             <div class="radio-btn">
-              <h3>Mehsul</h3>
-              <span>1kq</span>
+              <h3>Çiyelek</h3>
+              <span class="kq">0 kq</span>
+            </div>
+          </div>
+          <div class="top-div">
+            <input type="checkbox" />
+            <div class="radio-btn">
+              <h3>Yemiş</h3>
+              <span class="kq">0 kq</span>
+            </div>
+          </div>
+          <div class="top-div">
+            <input type="checkbox" />
+            <div class="radio-btn">
+              <h3>Qarpız</h3>
+              <span class="kq">0 kq</span>
             </div>
           </div>
         </div>
         <div class="bottom-side">
-          <div class="price-list">
-            <h3>Umumi mebleg</h3>
-            <span>0AZN</span>
+          <div class="bottom-side-top">
+            <div class="price-list">
+              <h3>Umumi mebleg</h3>
+              <span class="cost">0AZN</span>
+            </div>
+            <div class="price-list">
+              <h3>Verilen mebleg</h3>
+              <span class="cost">0AZN</span>
+            </div>
+            <div class="price-list">
+              <h3>Qaliq borc</h3>
+              <span class="cost">0AZN</span>
+            </div>
           </div>
-          <div class="price-list">
-            <h3>Verilen mebleg</h3>
-            <span>0AZN</span>
-          </div>
-          <div class="price-list">
-            <h3>Qaliq borc</h3>
-            <span>0AZN</span>
-          </div>
-          <div src="price-buttons">
+        <div class="bottom-side-bottom">
+          <div class="price-buttons">
             <button class="price-btn" type="button">100 AZN</button>
             <button class="price-btn" type="button">50 AZN</button>
             <button class="price-btn" type="button">20 AZN</button>
@@ -135,6 +152,8 @@
             <button class="price-btn" type="button">5 AZN</button>
             <button class="price-btn" type="button">1 AZN</button>
           </div>
+        </div>
+       
         </div>
       </div>
     </div>
