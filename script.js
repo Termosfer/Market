@@ -33,18 +33,14 @@ function dec(mehsul, index) {
   } else {
     topdiv[index].style.display = "none";
   }
-
-  
 }
-
 
 verilenMebleg.addEventListener("click", ()=>{
   let promptValue = +prompt("Mebleghi daxil edin")
-if(promptValue <= 0 && promptValue == ""){
+if(promptValue <= 0 && promptValue == ""  && promptValue === string){
   alert("Daxil edilmish her hansi bir meblegh yoxdur")
   return;
 }
 umumiMebleg[1].innerText = `${promptValue} AZN` ;
-
-umumiMebleg[2].innerText = promptValue - cem +" AZN";
+umumiMebleg[2].innerText = promptValue - cem + " AZN";
 })
