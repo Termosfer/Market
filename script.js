@@ -29,7 +29,6 @@ function inc(mehsul, index) {
 function dec(mehsul, index) {
   if (increase[index] > 1) {
     kq[index].innerText = --increase[index] + " kq";
-    return;
   } else {
     topdiv[index].style.display = "none";
   }
