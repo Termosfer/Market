@@ -4,10 +4,11 @@ let minus = document.querySelectorAll(".fa-circle-minus");
 let topdiv = document.querySelectorAll(".top-div");
 let kq = document.querySelectorAll(".kq");
 let kassa = document.querySelector(".amount-machine");
-let cem = 0;
 let umumiMebleg = document.querySelectorAll(".cost");
+let verilenMebleg = document.querySelector(".h3");
 let increase = [0, 0, 0, 0, 0, 0, 0, 0];
 let cost = [1.2, 10, 3, 4, 2.2, 7, 1.8, 0.4];
+let cem = 0;
 
 kassa.addEventListener("click", () => {
   cem = 0;
@@ -33,5 +34,17 @@ function dec(mehsul, index) {
     topdiv[index].style.display = "none";
   }
 
-  /*  kq[index].parentElement.style.display = "flex" */
+  
 }
+
+
+verilenMebleg.addEventListener("click", ()=>{
+  let promptValue = +prompt("Mebleghi daxil edin")
+if(promptValue <= 0 && promptValue == ""){
+  alert("Daxil edilmish her hansi bir meblegh yoxdur")
+  return;
+}
+umumiMebleg[1].innerText = `${promptValue} AZN` ;
+
+umumiMebleg[2].innerText = promptValue - cem +" AZN";
+})
