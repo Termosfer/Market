@@ -35,12 +35,14 @@ function dec(mehsul, index) {
   }
 }
 
-verilenMebleg.addEventListener("click", ()=>{
-  let promptValue = +prompt("Mebleghi daxil edin")
-if(promptValue <= 0 && promptValue == ""  && promptValue === string){
-  alert("Daxil edilmish her hansi bir meblegh yoxdur")
-  return;
-}
-umumiMebleg[1].innerText = `${promptValue} AZN` ;
-umumiMebleg[2].innerText = promptValue - cem + " AZN";
-})
+verilenMebleg.addEventListener("click", () => {
+  let promptValue = +prompt("Mebleghi daxil edin");
+  if (promptValue <= 0 || promptValue == "") {
+    alert("Daxil edilmish her hansi bir meblegh yoxdur");
+    return;
+  }
+
+  umumiMebleg[1].innerText = `${promptValue} AZN`;
+
+  umumiMebleg[2].innerText = promptValue - cem + " AZN";
+});
