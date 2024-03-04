@@ -37,12 +37,44 @@ function dec(index) {
 
 verilenMebleg.addEventListener("click", () => {
   let promptValue = +prompt("Mebleghi daxil edin");
-  if (promptValue <= 0 || promptValue == "") {
+  if (promptValue == " " || promptValue == "") {
     alert("Daxil edilmish her hansi bir meblegh yoxdur");
     return;
+  } else if (promptValue <= cem) {
+    while (promptValue <= cem) {
+    promptValue = +prompt("Verdiyiniz mebleg Umumi meblegden azdir")
+    }
   }
 
   umumiMebleg[1].innerText = `${promptValue} AZN`;
 
-  umumiMebleg[2].innerText = promptValue - cem + " AZN";
+  umumiMebleg[2].innerText = (promptValue - cem).toFixed(2) + " AZN";
+  
+let girilenPul = promptValue - cem;
+let manat = document.querySelectorAll(".m")
+console.log(manat);
+for(let i = 0; i<=manat.length-1; i++){
+  manat[i].innerText = 0;
+}
+while (girilenPul >= 1) { 
+  if (girilenPul >= 100) {
+    girilenPul -= 100;
+    manat[0].innerText = Number(manat[0].innerText) + Number(1)
+  } else if (girilenPul >= 50) {
+    girilenPul -= 50;
+    manat[1].innerText = Number(manat[1].innerText) + Number(1)
+  } else if (girilenPul >= 20) {
+    girilenPul -= 20;
+    manat[2].innerText = Number(manat[2].innerText) + Number(1)
+  } else if (girilenPul >= 10) {
+    girilenPul -= 10;
+    manat[3].innerText = Number(manat[3].innerText) + Number(1)
+  } else if (girilenPul >= 5) {
+    girilenPul -= 5;
+    manat[4].innerText = Number(manat[4].innerText) + Number(1)
+  } else if (girilenPul >= 1) {
+    girilenPul -= 1;
+    manat[5].innerText = Number(manat[5].innerText) + Number(1)
+  }
+}
 });
